@@ -5,13 +5,10 @@ import { Student } from './Student'
 
 export const StudentTable = ({ students }) => {
 
-  const renderStudents = () => {
-    return students.map(({ firstName, lastName, score }, i) => {
-      return (
-        <Student key={i} first={firstName} last={lastName} score={score} />
-      )
-    })
-  }
+  const renderStudents = () => students.map(({ firstName, lastName, score }, i) => {
+    return <Student key={i} first={firstName} last={lastName} score={score} />
+  })
+
 
   return (
     <table>
