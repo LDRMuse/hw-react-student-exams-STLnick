@@ -4,7 +4,15 @@ import PropTypes from 'prop-types'
 export const AddStudentForm = () => {
 
   return (
-    <h3>Add Student Form</h3>
+    <form>
+      <label htmlFor="firstName">First Name</label>
+      <input id="firstName" type="text" />
+      <label htmlFor="lastName">Last Name</label>
+      <input id="lastName" type="text" />
+      <label htmlFor="score">Exam Score</label>
+      <input id="score" min="0" max="100" type="number" />
+      <button type="submit">Add Student</button>
+    </form>
   )
 }
 
