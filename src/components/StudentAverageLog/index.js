@@ -38,10 +38,16 @@ export const StudentAverageLog = () => {
 
   return (
     <div>
-      <h1>Student Average Log</h1>
       <AverageDisplay avgScore={averageScore} />
       <Form handler={handleAddStudent} />
-      <Table students={students} />
+      <div className="columns mt-3">
+        <div className="column"></div>
+        <div className="column is-two-thirds">
+          <Table students={students} />
+        </div>
+        <div className="column"></div>
+      </div>
+
     </div>
   )
 }

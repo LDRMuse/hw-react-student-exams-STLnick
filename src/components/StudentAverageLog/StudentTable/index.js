@@ -11,12 +11,12 @@ export const StudentTable = ({ students }) => {
 
 
   return (
-    <table>
-      <thead>
+    <table className="table is-fullwidth is-striped has-text-centered">
+      <thead className="has-background-grey">
         <tr>
-          <td>First Name</td>
-          <td>Last Name</td>
-          <td>Exam Score</td>
+          <td className="has-text-weight-semibold has-text-white">First Name</td>
+          <td className="has-text-weight-semibold has-text-white">Last Name</td>
+          <td className="has-text-weight-semibold has-text-white">Exam Score</td>
         </tr>
       </thead>
       <tbody>
