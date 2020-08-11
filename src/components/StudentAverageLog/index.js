@@ -31,7 +31,9 @@ export const StudentAverageLog = () => {
       return acc
     }, {})
 
-    setStudents([...students, newStudent])
+    if (newStudent.score >= 0 && newStudent.score <= 100) {
+      setStudents([...students, newStudent])
+    }
   }
 
 
