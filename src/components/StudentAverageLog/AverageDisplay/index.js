@@ -8,11 +8,11 @@ export const AverageDisplay = ({ avgScore }) => {
   return (
     <div className={`has-text-centered ${colorClasses}`}>
       <h3 className="has-text-weight-semibold is-size-4">Average Exam Score</h3>
-      <h2 className="has-text-weight-bold is-size-3">{avgScore ? avgScore : 0}</h2>
+      <h2 className="has-text-weight-bold is-size-3">{avgScore}</h2>
     </div>
   )
 }
 
 AverageDisplay.propTypes = {
-  avgScore: PropTypes.number
+  avgScore: PropTypes.string
 }
