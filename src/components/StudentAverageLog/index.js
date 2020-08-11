@@ -40,7 +40,7 @@ export const StudentAverageLog = () => {
 
   return (
     <div>
-      <AverageDisplay avgScore={students[0] ? averageScore : '0'} />
+      <AverageDisplay avgScore={students[0] ? averageScore : '0'} numScores={students.length} />
       <Form handler={handleAddStudent} />
       <div className="columns mt-3">
         <div className="column"></div>
