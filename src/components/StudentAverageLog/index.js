@@ -25,7 +25,7 @@ export const StudentAverageLog = () => {
       <h1>Student Average Log</h1>
       <AverageDisplay />
       <Form handler={handleAddStudent} />
-      <Table />
+      <Table students={students} />
     </div>
   )
 }
