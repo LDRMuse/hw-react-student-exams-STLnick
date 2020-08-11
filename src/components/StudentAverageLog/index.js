@@ -11,10 +11,10 @@ export const StudentAverageLog = () => {
   const [averageScore, setAverageScore] = useState(0)
 
   const calcAverageScore = () => {
-    setAverageScore(students.reduce((acc, student) => {
+    setAverageScore(Number.parseFloat(students.reduce((acc, student) => {
       acc += Number(student.score)
       return acc
-    }, 0) / students.length)
+    }, 0) / students.length).toFixed(1))
   }
 
   useEffect(() => {
