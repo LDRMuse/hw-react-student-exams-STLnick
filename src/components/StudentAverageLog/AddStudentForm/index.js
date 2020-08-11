@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export const AddStudentForm = () => {
+export const AddStudentForm = ({ handler }) => {
 
   return (
-    <form>
+    <form onSubmit={handler}>
       <label htmlFor="firstName">First Name</label>
       <input id="firstName" type="text" />
       <label htmlFor="lastName">Last Name</label>
@@ -17,5 +17,5 @@ export const AddStudentForm = () => {
 }
 
 AddStudentForm.propTypes = {
-
+  handler: PropTypes.func
 }
