@@ -4,6 +4,8 @@ import { AddStudentForm as Form } from './AddStudentForm'
 import { AverageDisplay } from './AverageDisplay'
 import { StudentTable as Table } from './StudentTable'
 
+import 'bulma/css/bulma.css'
+
 export const StudentAverageLog = () => {
   const [students, setStudents] = useState([])
   const [averageScore, setAverageScore] = useState(0)
